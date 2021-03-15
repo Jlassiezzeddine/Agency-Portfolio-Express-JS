@@ -42,7 +42,7 @@ const access = (req, res, next) => {
       req.start.getHours() < 8
     ? nextAccess.setDate(nextAccess.getDate() + 1)
     : nextAccess.setDate(nextAccess.getDate() + 0);
-  console.log(req.start.getHours());
+
   next();
 };
 
