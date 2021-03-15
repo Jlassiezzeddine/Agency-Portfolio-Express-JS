@@ -1,0 +1,89 @@
+doctype html
+head
+  title Consulting &mdash; Website Template by Colorlib
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+  link(href='https://fonts.googleapis.com/css?family=Poppins:400,800,900|Source+Serif+Pro&display=swap' rel='stylesheet')
+  link(rel='stylesheet' href='fonts/icomoon/style.css')
+  link(rel='stylesheet' href='fonts/eticons/style.css')
+  link(rel='stylesheet' href='css/bootstrap.min.css')
+  link(rel='stylesheet' href='css/bootstrap-datepicker.css')
+  link(rel='stylesheet' href='css/jquery.fancybox.min.css')
+  link(rel='stylesheet' href='css/owl.carousel.min.css')
+  link(rel='stylesheet' href='css/owl.theme.default.min.css')
+  link(rel='stylesheet' href='css/aos.css')
+  // MAIN CSS
+  link(rel='stylesheet' href='css/style.css')
+#home-section.site-wrap
+  .site-mobile-menu.site-navbar-target
+    .site-mobile-menu-header
+      .site-mobile-menu-close.mt-3
+        span.icon-close2.js-menu-toggle
+    .site-mobile-menu-body
+  header.site-navbar.site-navbar-target(role='banner')
+    .container
+      .row.align-items-center.position-relative
+        .col-3
+          .site-logo
+            a.font-weight-bold(href='/') DigiHub
+        .col-9.text-right
+          span.d-inline-block.d-lg-block
+            a.text-black.site-menu-toggle.js-menu-toggle.py-5(href='#')
+              span.icon-menu.h3.text-black
+          nav.site-navigation.text-right.ml-auto.d-none.d-lg-none(role='navigation')
+            ul.site-menu.main-menu.js-clone-nav.ml-auto
+              li
+                a.nav-link(href='/') Home
+              
+              li
+                a.nav-link(href='/services') Services
+              
+              li.active
+                a.nav-link(href='/contact') Contact
+  .site-section-cover
+    .container
+      .row.align-items-center.text-left.justify-content-center
+        .col-lg-7.mr-auto
+          h1.text-black.mb-4 Contact Us
+          p.lead.text-muted
+            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem placeat non magnam vel voluptatibus velit voluptatum deserunt eveniet odit distinctio.
+  .site-section-cover(style="background-image: url('images/hero_3.jpg');" data-stellar-background-ratio='0.5')
+    .container
+      .row.align-items-center.text-left.justify-content-center
+  .site-section.bg-left-half
+    .container
+      .row
+        .col-lg-8.mb-5
+          form(action='#' method='post')
+            .form-group.row
+              .col-md-6.mb-4.mb-lg-0
+                input.form-control(type='text' placeholder='First name')
+              .col-md-6
+                input.form-control(type='text' placeholder='First name')
+            .form-group.row
+              .col-md-12
+                input.form-control(type='text' placeholder='Email address')
+            .form-group.row
+              .col-md-12
+                textarea.form-control(name='' id='' placeholder='Write your message.' cols='30' rows='10')
+            .form-group.row
+              .col-md-6.mr-auto
+                input.btn.btn-block.btn-dark.text-white.py-3.px-5(type='submit' value='Send Message')
+        .col-lg-4.ml-auto
+          .bg-white.p-3.p-md-5
+            h3.text-black.mb-4 Contact Info
+            ul.list-unstyled.footer-link
+              li.d-block.mb-3
+                span.d-block.text-black Address:
+                span 34 Street Name, City Name Here, United States
+              li.d-block.mb-3
+                span.d-block.text-black Phone:
+                span +1 242 4942 290
+              li.d-block.mb-3
+                span.d-block.text-black Email:
+                span info@yourdomain.com
+  // END .site-section
+
+//Footer 
+include ./footer.pug
+//

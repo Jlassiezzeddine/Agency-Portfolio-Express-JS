@@ -1,0 +1,38 @@
+doctype html
+head
+  title Consulting &mdash; Website Template by Colorlib
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+  link(href='https://fonts.googleapis.com/css?family=Poppins:400,800,900|Source+Serif+Pro&display=swap' rel='stylesheet')
+  link(rel='stylesheet' href='/fonts/icomoon/style.css')
+  link(rel='stylesheet' href='/fonts/eticons/style.css')
+  link(rel='stylesheet' href='/css/bootstrap.min.css')
+  link(rel='stylesheet' href='/css/jquery.fancybox.min.css')
+  link(rel='stylesheet' href='/css/owl.carousel.min.css')
+  link(rel='stylesheet' href='/css/owl.theme.default.min.css')
+  link(rel='stylesheet' href='/css/aos.css')
+  // MAIN CSS
+  link(rel='stylesheet' href='css/style.css')
+body
+  div.access-denied-wrapper
+    div.access-denied-content
+        h6.mb-3 App available from Mon to Fri, from 9am to 5pm 
+        h3 This App is not accessible at the moment
+        h5 Please come back in
+        #clockdiv.d-flex
+            div.d-flex.align-items-center
+                span.days
+                .smalltext Days
+            div.d-flex.align-items-center
+                span.hours
+                .smalltext Hours
+            div.d-flex.align-items-center
+                span.minutes
+                .smalltext Minutes
+            div.d-flex.align-items-center
+                span.seconds
+                .smalltext Seconds
+script(src='js/counter.js')
+script.
+  const deadline = "#{nextAccess}"
+  initializeClock('clockdiv', deadline);
